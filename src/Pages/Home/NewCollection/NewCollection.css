@@ -1,0 +1,59 @@
+.NewcollectionHader {
+    background-color: #fef7f5;
+}
+
+.headStyle {
+    text-align: center;
+    color: #09acb5;
+}
+
+
+/* .marginStyle {
+    background-position-x: center;
+    background-position-y: center; 
+    align-items: center;
+}  */
+
+.containerStyle {
+    display: grid;
+    grid-template-columns: repeat(2fr, 1fr);
+}
+
+.NewcolactionStyleImg:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+
+
+
+
+
+
+/* // For new colaction */
+/* .NewcolectionStyleMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+
+
+}
+
+.NewcolectionStyle {
+    display: flex;
+    background-color: #dbf1e7;
+
+
+
+
+}
+
+.NewcolectionStyleImg:hover {
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+.btn {
+    background-color: #09acb5;
+    border-color: #09acb5;
+} */
