@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './Item.css';
-import ItemCard from './ItemCard';
+import './Product.css';
+import ProductCard from './ProductCard';
 
-
-const Item = () => {
-
+const Product = () => {
     const [items, setItems] = useState([]);
     console.log(items);
     useEffect(() => {
@@ -12,25 +10,26 @@ const Item = () => {
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])
+
     return (
-        <div className='my-20 py-10 ItemsBack'>
+        <div className=' py-10 ItemsBack'>
             <div>
                 <h1 className='text-4xl  font-bold ItemheadStyle'>OUR PRODUCTS</h1>
                 <div className='marginStyle mt-3 w-fit mx-auto'><img className='' src="https://cdn.shopify.com/s/files/1/0257/7488/2876/files/title_img_shoba.png?v=1582185670" alt="" /></div>
             </div>
-
             <div className='DiscountStyleMain my-10 '>
+
                 {
-                    items.slice(0, 6).map(item => <ItemCard
+                    items.slice(0, 6).map(item => <ProductCard
                         key={item._id}
                         item={item}
                     // handleUpdateQuantity = {handleUpdateQuantity}
-                    ></ItemCard>)
+                    ></ProductCard>)
                 }
-            </div>
 
+            </div>
         </div>
     );
 };
 
-export default Item;
+export default Product;

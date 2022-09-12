@@ -1,6 +1,10 @@
 import React from 'react';
 import './NewCollection.css'
-import Image1 from '../../../Images/Items/furnitur-1.png'
+import Img_1 from '../../../Images/Bannar/img-7.png'
+import Img_2 from '../../../Images/Bannar/img-8.png';
+import Img_3 from '../../../Images/Bannar/img-9.png';
+import Img_4 from '../../../Images/Bannar/img-10.png';
+
 
 const NewCollection = () => {
   return (
@@ -16,22 +20,22 @@ const NewCollection = () => {
           <div className='grid grid-cols-2 gap-6'> 
           <div className='col-span-1 bg-blue-200'>
             <div className="NewcolactionStyleImg w-72">
-              <img src={Image1} alt="" />
+              <img src={Img_1} alt="" />
             </div>
           </div>
           <div className='col-span-1 bg-blue-200'>
             <div className="NewcolactionStyleImg w-72">
-              <img src={Image1} alt="" />
+              <img src={Img_2} alt="" />
             </div>
           </div>
           <div className='col-span-1 bg-blue-200'>
             <div className="NewcolactionStyleImg w-72">
-              <img src={Image1} alt="" />
+              <img src={Img_3} alt="" />
             </div>
           </div>
           <div className='col-span-1 bg-blue-200'>
             <div className="NewcolactionStyleImg w-72">
-              <img src={Image1} alt="" />
+              <img src={Img_4} alt="" />
             </div>
           </div>
           </div>
