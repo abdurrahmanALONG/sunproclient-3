@@ -15,7 +15,7 @@ const OrderPage = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/chair/${itemID}`;
+        const url = `https://sunprothree.herokuapp.com/chair/${itemID}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
@@ -24,7 +24,7 @@ const OrderPage = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/chair`;
+        const url = `https://sunprothree.herokuapp.com/chair`;
         fetch(url, {
             method: 'POST',
             headers: {

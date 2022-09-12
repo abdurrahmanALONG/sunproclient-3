@@ -16,7 +16,7 @@ const AddProduct = () => {
         const user = { name, email, img, unitPerPrice, quantity, address, phone };
         console.log(user);
 
-        fetch('http://localhost:5000/chair', {
+        fetch('https://sunprothree.herokuapp.com/chair', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -7,7 +7,7 @@ const ManageProduct = () => {
     const { itemId } = useParams();
     const [item, setItem] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/chair/${itemId}`;
+        const url = `https://sunprothree.herokuapp.com/chair/${itemId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
@@ -21,7 +21,7 @@ const ManageProduct = () => {
         const newQuantity = parseInt(event.target.name.value);
         const totalNewQuantity = oldQuantity + newQuantity;
         const updatedQuantity = { totalNewQuantity };
-        const url = `http://localhost:5000/chair/${item._id}`;
+        const url = `https://sunprothree.herokuapp.com/chair/${item._id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -47,7 +47,7 @@ const ManageProduct = () => {
         const quantityCurrent = parseInt(item.quantity);
         const totalNewQuantity = quantityCurrent - 1;
         const updatedQuantity = { totalNewQuantity };
-        const url = `http://localhost:5000/products/${item._id}`;
+        const url = `https://sunprothree.herokuapp.com/chair/${item._id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
