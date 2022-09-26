@@ -20,7 +20,7 @@ const Product = () => {
             <div className='DiscountStyleMain my-10 '>
 
                 {
-                    items.slice(0, 6).map(item => <ProductCard
+                    items.map(item => <ProductCard
                         key={item._id}
                         item={item}
                     // handleUpdateQuantity = {handleUpdateQuantity}

@@ -34,7 +34,7 @@ function App() {
           <Route path="Blogs" element={<Blogs />} />
           <Route path="/item/:itemID" element={
             <RequireAuth>
-              <OrderPage></OrderPage>
+              <MyItems></MyItems>
             </RequireAuth>}>
           </Route>
           <Route path="/item/:itemID" element={ <ManageProduct></ManageProduct>}></Route>

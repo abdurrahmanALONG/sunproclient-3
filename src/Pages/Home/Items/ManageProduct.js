@@ -12,7 +12,7 @@ const ManageProduct = () => {
             .then(res => res.json())
             .then(data => setItem(data));
 
-    }, []);
+    }, [itemId]);
 
     // This is for Add New Quantity
     const handleUpdateQuantity = event => {

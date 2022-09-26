@@ -6,7 +6,6 @@ import ItemCard from './ItemCard';
 const Item = () => {
 
     const [items, setItems] = useState([]);
-    console.log(items);
     useEffect(() => {
         fetch('https://sunprothree.herokuapp.com/chair')
             .then(res => res.json())

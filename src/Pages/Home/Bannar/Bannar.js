@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner1 from '../../../Images/Bannar/Banner-2.jpg'
+import Banner2 from '../../../Images/Bannar/Banner-3.jpg'
 
 const Bannar = () => {
     return (
@@ -12,7 +13,7 @@ const Bannar = () => {
                 </div>
             </div>
             <div id="slide2" className="carousel-item relative w-full">
-                <img src={Banner1} className="w-full" alt='' />
+                <img src={Banner2} className="w-full" alt='' />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" className="btn btn-circle">❮</a>
                     <a href="#slide3" className="btn btn-circle">❯</a>
@@ -26,7 +27,7 @@ const Bannar = () => {
                 </div>
             </div>
             <div id="slide4" className="carousel-item relative w-full">
-                <img src={Banner1} className="w-full" alt='' />
+                <img src={Banner2} className="w-full" alt='' />
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide3" className="btn btn-circle">❮</a>
                     <a href="#slide1" className="btn btn-circle">❯</a>

@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import './Item.css';
 
 const ItemCard = ({item}) => {
-    const {name, img } = item;
+    const {name, img, _id } = item;
     const navigate = useNavigate();
     const navigatePurchasePage = id => {
+        console.log(id)
         navigate(`/item/${id}`);
     }
     return (
@@ -18,7 +19,7 @@ const ItemCard = ({item}) => {
                         <div className='text-center my-10 '>
                             <h1 className='font-bold'>{name}</h1>
                             <h3 className='text-4xl text-amber-900 mt-3 font-bold'>$120</h3>
-                            <button className='btn mt-10 rounded-none' onClick={navigatePurchasePage}>BUY NOW</button>
+                            <button className='btn mt-10 rounded-none' onClick={()=>navigatePurchasePage(_id)}>BUY NOW</button>
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css'
 
 const ProductCard = ({ item }) => {
-    const { _id, name, img, price, quantity, suppliername, details } = item;
+    const { name, img } = item;
     return (
         <div>
             <div className='DiscountStyle mx-10 my-10 justify-items-center gap-2'>
